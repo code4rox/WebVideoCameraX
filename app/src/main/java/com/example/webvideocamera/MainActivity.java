@@ -14,6 +14,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.nabinbhandari.android.permissions.PermissionHandler;
 import com.nabinbhandari.android.permissions.Permissions;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mProLayout = findViewById(R.id.pro_layout);
         myWebView = findViewById(R.id.webview);
 
+        Toast.makeText(this, "Hi Github", Toast.LENGTH_SHORT).show();
 
 
         Permissions.check(this, Manifest.permission.CAMERA, null, new PermissionHandler() {
